@@ -1,0 +1,9 @@
+name: deeprl-pong
+channels:
+  - pytorch
+dependencies:
+  - pytorch
+  - torchvision
+  - pip:
+    - gym
+    - moviepy

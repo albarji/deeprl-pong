@@ -2,6 +2,33 @@
 
 A repository for methods to learn to play Pong, using Deep Reinforcement Learning methods.
 
+## Install
+
+### Docker
+
+[Install Docker](https://www.docker.com/) and [nvidia-docker](https://github.com/NVIDIA/nvidia-docker), then build 
+the image as
+
+    docker build -t deeprl-pong .
+    
+After the build you can open a terminal into the docker container as
+
+    nvidia-docker run --rm -it pong
+
+### Local install
+
+After getting a working [Conda distribution](https://anaconda.org/anaconda/python), install the environment as
+
+    conda env install -f environment.yml
+    
+Then log into the environment
+
+    source activate deeprl-pong
+    
+And install the addons for Atari games
+
+    pip install gym[atari]
+
 ## Implemented methods
 
 ### Policy gradients
