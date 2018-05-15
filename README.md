@@ -19,7 +19,7 @@ After the build you can open a terminal into the docker container as
 
 After getting a working [Conda distribution](https://anaconda.org/anaconda/python), install the environment as
 
-    conda env install -f environment.yml
+    conda env create -f environment.yml
     
 Then log into the environment
 
