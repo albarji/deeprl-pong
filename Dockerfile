@@ -16,7 +16,7 @@ RUN curl -o Miniconda3-latest-Linux-x86_64.sh https://repo.continuum.io/minicond
 # Python requirements
 ADD environment.yml environment.yml
 RUN conda env update -n root -f environment.yml \
-    && pip install gym[atari]
+    && pip install gym[atari] \
     && conda clean -y --all \
     && rm environment.yml
 
