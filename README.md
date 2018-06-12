@@ -13,7 +13,7 @@ the image as
     
 After the build you can open a terminal into the docker container as
 
-    nvidia-docker run --rm -it pong
+    nvidia-docker run --rm -it deeprl-pong
 
 ### Local install
 
